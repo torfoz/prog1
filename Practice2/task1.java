@@ -1,5 +1,3 @@
-package prog1.Practice2;
-
 import static javax.swing.JOptionPane.showInputDialog;
 import static javax.swing.JOptionPane.showMessageDialog;
 
@@ -11,7 +9,8 @@ public class task1 {
 
         if ((year % 4 == 0) && (year % 100 != 0 || year % 400 == 0)) {
             showMessageDialog(null, year + " is a leap year.");
-        } else {
+        } 
+        else {
             showMessageDialog(null, year + " is not a leap year");
         }
     }

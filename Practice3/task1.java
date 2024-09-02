@@ -1,5 +1,3 @@
-package prog1.Practice3;
-
 import static javax.swing.JOptionPane.showInputDialog;
 
 public class task1 {
