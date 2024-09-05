@@ -6,7 +6,7 @@ public class tenTimes {
         int number = Integer.parseInt(chooseNumber);
         int currentNumber = 1;
 
-        while (currentNumber < 11) { 
+        while (currentNumber < 11) {
             int answer = number * currentNumber;
             System.out.println(number + " * " + currentNumber + " = " + answer);
             currentNumber = currentNumber + 1;

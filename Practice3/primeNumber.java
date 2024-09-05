@@ -14,11 +14,6 @@ public class primeNumber {
                 showMessageDialog(null, primeNumber + " is not a prime number");
             else {
                 showMessageDialog(null, primeNumber + " is a prime number");
-            }
-        
-        
-
-        
-            
+            } 
         }
     }
