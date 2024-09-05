@@ -1,7 +1,7 @@
 import static javax.swing.JOptionPane.showInputDialog;
 import static javax.swing.JOptionPane.showMessageDialog;
 
-public class task1 {
+public class leapYear {
     public static void main(String[] args) {
         String readYear = showInputDialog("Write a year: ");
 

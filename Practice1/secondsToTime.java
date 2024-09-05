@@ -1,5 +1,5 @@
 import static javax.swing.JOptionPane.*;
-public class task3 {
+public class secondsToTime {
     public static void main(String[] args) {
         
         String readSeconds = showInputDialog("How many seconds?: ");

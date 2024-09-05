@@ -1,6 +1,6 @@
 import static javax.swing.JOptionPane.showInputDialog;
 
-public class task1 {
+public class tenTimes {
     public static void main(String[] args) {
         String chooseNumber = showInputDialog("Choose a number: ");
         int number = Integer.parseInt(chooseNumber);

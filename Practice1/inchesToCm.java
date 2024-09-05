@@ -1,5 +1,5 @@
 import static javax.swing.JOptionPane.*;
-public class task1 {
+public class inchesToCm {
     public static void main(String[] args) {
         
         String readInches = showInputDialog("Inches: ");

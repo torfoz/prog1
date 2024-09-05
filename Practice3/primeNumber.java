@@ -1,7 +1,7 @@
 import static javax.swing.JOptionPane.showInputDialog;
 import static javax.swing.JOptionPane.showMessageDialog;
 
-public class task2 {
+public class primeNumber {
     public static void main(String[] args) {
         String number = showInputDialog("Write a number: ");
         int primeNumber = Integer.parseInt(number);
