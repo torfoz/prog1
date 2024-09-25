@@ -2,14 +2,19 @@ import static javax.swing.JOptionPane.showInputDialog;
 
 public class tenTimes {
     public static void main(String[] args) {
-        String chooseNumber = showInputDialog("Choose a number: ");
-        int number = Integer.parseInt(chooseNumber);
-        int currentNumber = 1;
+        String chooseFirstNumber = showInputDialog("Choose a number: ");
+        String chooseSecondNumber = showInputDialog("Choose a second number: ");
+        int firstNumber = Integer.parseInt(chooseFirstNumber);
+        int secondNumber = Integer.parseInt(chooseSecondNumber);
 
-        while (currentNumber < 11) {
-            int answer = number * currentNumber;
-            System.out.println(number + " * " + currentNumber + " = " + answer);
-            currentNumber = currentNumber + 1;
+        do {
+            for (int i=1; i<11; i++) {
+                int answer = firstNumber * i;
+                System.out.println(firstNumber + " * " + i + " = " + answer);
+            }
+            firstNumber++;
+            System.out.println("\n");
         }
+        while (firstNumber <= secondNumber);
     }
 }

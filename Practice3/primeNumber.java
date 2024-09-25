@@ -2,18 +2,28 @@ import static javax.swing.JOptionPane.showInputDialog;
 import static javax.swing.JOptionPane.showMessageDialog;
 
 public class primeNumber {
-    public static void main(String[] args) {
-        String number = showInputDialog("Write a number: ");
-        int primeNumber = Integer.parseInt(number);
+    public static boolean isPrime(int n) {
+        if (n <= 1) return false;
+        if (n == 2 || n == 3) return true;
+        if (n % 2 == 0) return false;
 
-        if (primeNumber <= 1)
-            showMessageDialog(null,"0 or negative numbers not allowed.");
-            
-        for (int i = 2; i <= primeNumber / 2; i++)
-            if (primeNumber % i == 0)
-                showMessageDialog(null, primeNumber + " is not a prime number");
-            else {
-                showMessageDialog(null, primeNumber + " is a prime number");
-            } 
+        for (int i = 3; i < Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        while (true) {
+            String number = showInputDialog("Write a number: ");
+            int primeNumber = Integer.parseInt(number);
+            if (isPrime(primeNumber)) {
+                System.out.println(primeNumber + " is a prime number");
+            } else {
+                System.out.println(primeNumber + " is not a prime number");
+            }
         }
     }
+}
