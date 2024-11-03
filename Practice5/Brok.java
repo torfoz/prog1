@@ -47,18 +47,21 @@ public class Brok {
     }
 
     public static void main(String[] args) {
-        Brok f1 = new Brok(3, 4);
-        Brok f2 = new Brok(5, 6);
+        Brok f1 = new Brok(5, 8);
+        Brok f2 = new Brok(3, 10);
 
         f1.add(f2);
         System.out.println(f1.getTeller() + "/" + f1.getNevner());
 
+        f1 = new Brok(3, 4);
         f1.subtract(f2);
         System.out.println(f1.getTeller() + "/" + f1.getNevner());
 
+        f1 = new Brok(3, 4);
         f1.multiply(f2);
         System.out.println(f1.getTeller() + "/" + f1.getNevner());
 
+        f1 = new Brok(3, 4);
         f1.divide(f2);
         System.out.println(f1.getTeller() + "/" + f1.getNevner());
 

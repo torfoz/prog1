@@ -25,7 +25,7 @@ public class MinRandom {
 
         System.out.println("\nTilfeldig desimaltall: ");
         for (int i = 0; i < 10; i++) {
-            double desimaltall = minRandom.nesteDesimaltall(1.5, 4.0);
+            double desimaltall = minRandom.nesteDesimaltall(1.5, 4.5);
             System.out.println(desimaltall);
         }
     }
