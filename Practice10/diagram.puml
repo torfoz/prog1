@@ -1,0 +1,48 @@
+@startuml
+
+class Menu {
+  -String name
+  -List<Dish> dishes
+  +Menu(String name, List<Dish> dishes, Type type)
+  +void addDish(Dish dish)
+  +String getName()
+  +List<Dish> getDish()
+}
+
+class Dish {
+  -String name
+  -String recipe
+  -Type type
+  -int price
+  +Dish(String name, String description, Type type, int price)
+  +String getName()
+  +String getRecipe()
+  +Type getType()
+  +int getPrice()
+  +String toString()
+}
+
+enum Type {
+  HOVEDRETT
+  FORRETT
+  DESSERT
+}
+
+class MenuRegister {
+  -List<Menu> menuRegister
+  -List<Dish> dishRegister
+  +void addMenu(String name, List<Dish> dishes, Type type)
+  +void addDish(String name, String recipe, Type type, int price)
+  +void addDishToMenu(String menuName, Dish dish)
+  +void getDishByName(String name)
+  +void getDishByType(Type type)
+  +void getDishByPriceInterval(int minPrice, int maxPrice)
+  +void printMenuRegister()
+  +static void main(String[] args)
+}
+
+MenuRegister "1" *-- "many" Menu
+Menu "many" *-- "many" Dish
+Dish --> Type
+
+@enduml

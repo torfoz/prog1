@@ -1,0 +1,10 @@
+@startuml
+actor User
+participant Main
+participant PropertyRegister
+
+User -> Main: Velger "Skriv ut alle eiendommer"
+Main -> PropertyRegister: printAllProperties()
+PropertyRegister -> PropertyRegister: Loop gjennom alle eiendommer
+PropertyRegister -> Main: Skriver ut eiendommer
+@enduml

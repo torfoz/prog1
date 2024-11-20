@@ -1,5 +1,3 @@
-package Practice10;
-
 public class Event {
   private int eventId;
   private String eventName;
